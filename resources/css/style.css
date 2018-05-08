@@ -63,3 +63,9 @@ nav ul {
   justify-content: space-between;
   padding: 0.75rem 0;
 }
+
+/* main content styles */
+.main {
+  background-color: white;
+
+}
