@@ -77,12 +77,19 @@ ul a {
 .main .container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .item {
+  margin-top: 3rem;
   border: 4px solid black;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#glasses img {
+  margin: auto;
 }
 
 .item img {
@@ -98,11 +105,12 @@ ul a {
 }
 
 .subsection {
+  margin: 3rem 0 4rem 0;
   width: 35%;
 }
 
 .subsection h2 {
-  padding: 2rem;
+  padding: 1rem 2rem;
   background-color: black;
 }
 
