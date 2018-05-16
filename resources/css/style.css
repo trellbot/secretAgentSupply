@@ -57,6 +57,7 @@ header {
 nav {
   background-color: firebrick;
 }
+
 nav ul {
   display: flex;
   align-items: center;
@@ -67,6 +68,10 @@ nav ul {
 ul a {
   color: white;
   text-decoration: none;
+}
+
+#menu-btn {
+  display: none;
 }
 
 /* main content styles */
@@ -88,14 +93,14 @@ ul a {
   justify-content: flex-end;
 }
 
-#glasses img {
-  margin: auto;
-}
-
 .item img {
   max-width: 8rem;
   display: block;
   margin: 2rem auto;
+}
+
+#glasses img {
+  margin: auto;
 }
 
 .item h2 {
@@ -104,7 +109,7 @@ ul a {
   padding: 0.5rem 0;
 }
 
-.subsection {
+.subsection {  /* for location and hours */
   margin: 3rem 0 4rem 0;
   width: 35%;
 }
@@ -123,4 +128,32 @@ footer {
   height: 5rem;
   position: relative;
   top: 3rem;
+}
+
+/* tablet screen size adjustments */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: auto; /* set site container to auto-size */
+  }
+
+  .feature h1 {
+    font-size: 1.5rem; /* adjust text size in banner */
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .item {
+    width: 47%; /* expand size of featured items */
+  }
+
+  #glasses {
+    display: none; /* hide glasses */
+  }
 }
