@@ -157,3 +157,64 @@ footer {
     display: none; /* hide glasses */
   }
 }
+
+@media screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .container {
+    width: auto; /* set site container to auto-size */
+  }
+
+  .feature { /* move banner text to bottom of image */
+    width: auto;
+    background-color: black;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 11.1rem;
+  }
+
+  .feature h2 {
+    font-size: 0.77rem; /* adjust text size in banner */
+  }
+
+  .feature h1 {
+    font-size: 1rem; /* adjust text size in banner */
+  }
+
+  nav ul li {
+    display: none; /* hide all navigation */
+  }
+
+  #menu-btn { /* show menu button */
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .main .container { /* show main content in a single column */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .item {
+    margin-bottom: 3rem;
+  }
+
+  .item, .subsection {
+    width: 90%; /* expand size of featured items */
+  }
+
+  .subsection {  /* for location and hours */
+    margin: 0.5rem 0;
+  }
+
+  #glasses, #watch {
+    display: none; /* hide glasses and watch */
+  }
+
+  footer p {
+    text-align: center; /* center footer text */
+  }
+}
